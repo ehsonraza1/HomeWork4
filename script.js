@@ -13,6 +13,9 @@ var buttonB = document.querySelector("#b");
 var buttonC = document.querySelector("#c");
 var buttonD = document.querySelector("#d");
 
+//TODO StartButton
+startBtn.addEventListener("click", function () {});
+
 //TODO Timer
 function setTime() {
   var timerInterval = setInterval(function () {
@@ -107,3 +110,7 @@ for (var i = 0; i < questions.length; i++) {
 
 // Show total at end
 alert("You got " + score + "/" + questions.length);
+//TODO submit button
+submitBtn.addEventListener("click", function () {
+  event.preventDefault();
+});

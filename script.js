@@ -2,7 +2,8 @@ var score = 0;
 var secondsLeft = 60;
 var rightAnswer;
 var startBtn = document.querySelector("#startbtn");
-var submitBtn = document.querySelector("#");
+var submitBtn = document.querySelector("#submitScore");
+var clearBtn = document.querySelector("#clearHighscore");
 var countDownEl = document.querySelector("#timer");
 var questionEl = document.querySelector("#questions");
 var quizPageEL = document.querySelector("#quizPage");
@@ -112,3 +113,10 @@ for (var i = 0; i < questions.length; i++) {
 submitBtn.addEventListener("click", function () {
   event.preventDefault();
 });
+//TODO clear btn
+submitBtn.addEventListener("click", function(event) {
+  event.preventDefault();
+  textAreaEl.value = "";
+  elements.forEach(function(element) {
+    element.textContent = "";
+  });

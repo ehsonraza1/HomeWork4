@@ -1,0 +1,13 @@
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.form-control {
+  width: 15%;
+}
+.user-initials-font {
+  font-family: cursive;
+}
+.user-score-font {
+  font-family: cursive;
+}

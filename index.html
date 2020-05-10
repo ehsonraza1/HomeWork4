@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1" id="timer">Time left:</span>
+      <button type="button" class="btn btn-light">Start Quiz</button>
+    </nav>
+    <div class="container">
+      <div id="start">
+        <div class="jumbotron">
+            <h1 class="display-4">Press Start Button to begin JavaScript Quiz</h1>
+            <button type="button" id="startbtn" class="btn btn-dark somethingelse">
+          Start Quiz
+        </button>
+        <button
+          id="startPageHighscore"
+          class="btn btn-dark somethingelse"
+          onclick="showHighscore()"
+        >
+          High Scores
+        </button>
+      </div>
+
+      <div id="quiz">
+        <div id="questions"><p>Questions Placeholder</p></div>
+        <button id="a" onclick="checkAnswer('a')">A</button>
+        <button id="b" onclick="checkAnswer('b')">B</button>
+        <button id="c" onclick="checkAnswer('c')">C</button>
+        <button id="d" onclick="checkAnswer('d')">D</button>
+        <div id="result"></div>
+      </div>
+      <div id="gameover">
+        <div id="finalScore"></div>
+        <input type="text" class="form-control" placeholder="Enter Initials Here" id="initials"/>
+        <button type="submit" class="btn btn-primary" id="submitScore">
+          Submit Score
+        </button>
+      </div>
+      <div id="highscoreContainer">
+        <div id="high-scorePage">
+          <div id="highscore-header">
+            <h2 class="user-initials-font">User Initials</h2>
+            <h2 class="user-score-font">Score</h2>
+          </div>
+          <div id="highscore-initials"></div>
+          <div id="highscore-score"></div>
+        </div>
+        <div id="endGameBtns">
+          <button type="submit" class="btn btn-primary" id="playAgain" onclick="replayQuiz()">Play Again</button>
+          <button type="submit" class="btn btn-secondary" id="clearHighscore" onclick="clearScore()">
+            Clear Highscores
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>

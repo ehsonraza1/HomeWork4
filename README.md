@@ -10,6 +10,19 @@ I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 ```
 
+TODO
+startbutton - on.Click event function
+Create a Timer Function with variables that kick off the timer (Global Variable )
+
+- once the start button is clicked the timer should start running
+- once the questions are compeleteled the timer needs to stop
+- once the time runs out the timer needs to stop
+  Create a for loop for the questions with key value pairs in activity 33
+  Create a Global variable for the score
+- var score=0 ;
+- every incorrect answer deducts 10 seconds
+  local storage
+
 ## Acceptance Criteria
 
 ```
@@ -34,9 +47,10 @@ The following animation demonstrates the application functionality:
 
 You are required to submit the following for review:
 
-* The URL of the functional, deployed application.
+- The URL of the functional, deployed application.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
-- - -
+---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

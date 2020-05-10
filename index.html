@@ -27,22 +27,20 @@
         <button
           id="startPageHighscore"
           class="btn btn-dark somethingelse"
-          onclick="showHighscore()"
         >
           High Scores
         </button>
       </div>
 
-      <div id="quiz">
+      <div id="quizPage">
         <div id="questions"><p>Questions Placeholder</p></div>
-        <button id="a" onclick="checkAnswer('a')">A</button>
-        <button id="b" onclick="checkAnswer('b')">B</button>
-        <button id="c" onclick="checkAnswer('c')">C</button>
-        <button id="d" onclick="checkAnswer('d')">D</button>
-        <div id="result"></div>
+        <button id="a">A</button>
+        <button id="b">B</button>
+        <button id="c">C</button>
+        <button id="d">D</button>
       </div>
       <div id="gameover">
-        <div id="finalScore"></div>
+        <div id="score"></div>
         <input type="text" class="form-control" placeholder="Enter Initials Here" id="initials"/>
         <button type="submit" class="btn btn-primary" id="submitScore">
           Submit Score
@@ -58,8 +56,8 @@
           <div id="highscore-score"></div>
         </div>
         <div id="endGameBtns">
-          <button type="submit" class="btn btn-primary" id="playAgain" onclick="replayQuiz()">Play Again</button>
-          <button type="submit" class="btn btn-secondary" id="clearHighscore" onclick="clearScore()">
+          <button type="submit" class="btn btn-primary" id="playAgain">Play Again</button>
+          <button type="submit" class="btn btn-secondary" id="clearHighscore">
             Clear Highscores
           </button>
         </div>

@@ -1,30 +1,34 @@
 var score = 0;
-var timeEl = document.querySelector("#timer");
-
-// TODO Time Interval
-var mainEl = document.getElementById("main");
-
 var secondsLeft = 60;
+var rightAnswer;
+var startBtn = document.querySelector("#startbtn");
+var submitBtn = document.querySelector("#");
+var countDownEl = document.querySelector("#timer");
+var questionEl = document.querySelector("#questions");
+var quizPageEL = document.querySelector("#quizPage");
+var score = document.querySelector("#score");
+var end = document.querySelector("#gameover");
+var buttonA = document.querySelector("#a");
+var buttonB = document.querySelector("#b");
+var buttonC = document.querySelector("#c");
+var buttonD = document.querySelector("#d");
 
+//TODO Timer
 function setTime() {
   var timerInterval = setInterval(function () {
     secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+    countDownEl.textContent = secondsLeft + " seconds left Scrub!";
 
     if (secondsLeft === 0) {
       clearInterval(timerInterval);
-      sendMessage();
+      pointsScreen();
     }
   }, 1000);
 }
 
-function sendMessage() {
-  timeEl.textContent = " ";
-
-  var imgEl = document.createElement("img");
-
-  imgEl.setAttribute("src", "images/image_1.jpg");
-  mainEl.appendChild(imgEl);
+function pointsScreen() {
+  countDownEl.textContent = " ";
+  //FIXME Add dynamic HTML once Timer ends
 }
 
 setTime();
@@ -82,7 +86,7 @@ var questions = [
     Answer: "d",
   },
 ];
-
+//TODO Questions
 // Loop over every question object
 for (var i = 0; i < questions.length; i++) {
   // Display current question to user and ask OK/Cancel

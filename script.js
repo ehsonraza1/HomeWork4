@@ -114,7 +114,7 @@ submitBtn.addEventListener("click", function () {
   event.preventDefault();
 });
 //TODO clear btn
-submitBtn.addEventListener("click", function(event) {
+clearBtn.addEventListener("click", function(event) {
   event.preventDefault();
   textAreaEl.value = "";
   elements.forEach(function(element) {
